@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Reporte</title>
+<head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Nombre </th>
+            <th>Apellido </th>
+            <th>ID </th>
+            <th>Sexo </th>
+            <th>Fecha nacimiento </th>
+            <th>Direccion </th>
+            <th>Telefono </th>
+            <th>Correo </th>
+        </tr>
+        {% for us in Persona %}
+        <tr>
+            <td>{{us.nom}}</td>
+            <td>{{us.ape}}</td>
+            <td>{{us.idn}}</td>
+            <td>{{us.sx}}</td>
+            <td>{{us.fec}}</td>
+            <td>{{us.dirc}}</td>
+            <td>{{us.tel}}</td>
+            <td>{{us.cor}}</td>
+            <td>
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
